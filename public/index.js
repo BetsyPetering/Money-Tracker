@@ -1,5 +1,3 @@
-//  add serviceworker eventlistener here
-
 
 let transactions = [];
 let myChart;
