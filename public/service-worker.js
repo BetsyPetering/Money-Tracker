@@ -1,4 +1,4 @@
-//this intercepts any api call
+//intercepts any api call
 const FILES_TO_CACHE = ["/", 
                         "/index.html", 
                         "/index.js",
@@ -56,7 +56,7 @@ self.addEventListener("fetch", function(evt) {
           })
           .catch(err => {
             // Network request failed, try to get it from the cache.
-            return cache.match(evt.request);                     //this is what it does when Internet Failes to do when back online
+            return cache.match(evt.request);
           });
       }).catch(err => console.log(err))
     );
